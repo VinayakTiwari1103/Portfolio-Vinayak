@@ -37,13 +37,14 @@ export default function Index() {
         });
     }, []);
 
+
     const routes = {
-        Work: '/work', 
-        RESUME: '/about', 
-        Contact: '/contact', 
-        // Download: '/download',
- 
+        Work: 'https://github.com/', // Updated to GitHub link
+        RESUME: '/about',
+        Contact: 'mailto:tiwarivinayak10@gmail.com', // Mailto link
     };
+    
+    
 
     const handleNavClick = (section) => {
         console.log(`Navigating to ${section}`); //  The console.log is added here
