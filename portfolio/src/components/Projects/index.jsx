@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "CHMOD Calculator",
-    src: "calu.img",
+    src: "calu.png",
     color: "#4CAF50",
   },
   {
