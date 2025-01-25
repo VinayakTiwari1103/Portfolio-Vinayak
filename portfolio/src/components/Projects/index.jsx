@@ -9,12 +9,12 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "Notes App Using Docker",
+    title: "Notes App ",
     src: "notes_app.png",
     color: "#000000",
   },
   {
-    title: "CHMOD Calculator Using K8s Clustering",
+    title: "CHMOD Calculator ",
     src: "calu.png",
     color: "#000000",
   },
@@ -24,24 +24,24 @@ const projects = [
     color: "#000000",
   },
   {
-    title: "AWS Cloud Shell using AWS CLI",
+    title: "AWS Cloud Shell ",
     src: "officestudio.jpeg",
     color: "#8C8C8C",
   },
   {
-    title: "Pawchews -HTML,CSS,JS,AWS",
+    title: "DevOps Community Blog Page",
+    src: "image1103.png",
+    color: "#FFD700",
+  },
+  {
+    title: "Pawchews(DOG FOOD)",
     src: "locomotiv.png",
     color: "#EFE8D3",
   },
   {
-    title: "Portfolio -React,NEXT",
+    title: "Portfolio ",
     src: "silenci.png",
     color: "#706D63",
-  },
-  {
-    title: "DevOps Community Blog Page - ReactJS,MongoDB",
-    src: "image1103.png",
-    color: "#FFD700",
   },
 ];
 
