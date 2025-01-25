@@ -9,37 +9,37 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "Notes App",
+    title: "Notes App Using Docker",
     src: "notes_app.png",
     color: "#000000",
   },
   {
-    title: "CHMOD Calculator",
+    title: "CHMOD Calculator Using K8s Clustering",
     src: "calu.png",
     color: "#000000",
   },
   {
-    title: "CC Analysis",
+    title: "CC Analysis with Python",
     src: "c2montreal.jpeg",
     color: "#000000",
   },
   {
-    title: "AWS Cloud Shell",
+    title: "AWS Cloud Shell using AWS CLI",
     src: "officestudio.jpeg",
     color: "#8C8C8C",
   },
   {
-    title: "Pawchews",
+    title: "Pawchews -HTML,CSS,JS,AWS",
     src: "locomotiv.png",
     color: "#EFE8D3",
   },
   {
-    title: "Portfolio",
+    title: "Portfolio -React,NEXT",
     src: "silenci.png",
     color: "#706D63",
   },
   {
-    title: "DevOps Community Blog Page",
+    title: "DevOps Community Blog Page - ReactJS,MongoDB",
     src: "image1103.png",
     color: "#FFD700",
   },
@@ -107,7 +107,7 @@ export default function Home() {
         <p>More work</p>
       </Rounded>
       <>
-        <motion.div
+        {/* <motion.div
           ref={modalContainer}
           variants={scaleAnimation}
           initial="initial"
@@ -152,7 +152,7 @@ export default function Home() {
           animate={active ? "enter" : "closed"}
         >
           View
-        </motion.div>
+        </motion.div> */}
       </>
     </main>
   );
