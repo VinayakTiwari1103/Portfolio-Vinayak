@@ -107,7 +107,7 @@ export default function Home() {
         <p>More work</p>
       </Rounded>
       <>
-        {/* <motion.div
+        <motion.div
           ref={modalContainer}
           variants={scaleAnimation}
           initial="initial"
@@ -152,7 +152,7 @@ export default function Home() {
           animate={active ? "enter" : "closed"}
         >
           View
-        </motion.div> */}
+        </motion.div>
       </>
     </main>
   );
