@@ -17,11 +17,14 @@ export default function Index() {
     const router = useRouter();
 
     useEffect(() => {
+        // Reset `isActive` state when pathname changes
         if (isActive) setIsActive(false);
     }, [pathname]);
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+
+        // Add ScrollTrigger animation to scale the button on scroll
         gsap.to(button.current, {
             scrollTrigger: {
                 trigger: document.documentElement,
@@ -31,26 +34,25 @@ export default function Index() {
                     gsap.to(button.current, { scale: 1, duration: 0.25, ease: 'power1.out' });
                 },
                 onEnterBack: () => {
-                    gsap.to(button.current, { scale: 0, duration: 0.25, ease: 'power1.out' }, () => setIsActive(false));
+                    gsap.to(button.current, { scale: 0, duration: 0.25, ease: 'power1.out' });
                 },
             },
         });
     }, []);
 
-
     const routes = {
-        Work: 'https://github.com/', // Updated to GitHub link
-        RESUME: '/about',
-        Contact: 'mailto:tiwarivinayak10@gmail.com', // Mailto link
+        WORK: 'https://github.com/', // GitHub link
+        RESUME: 'mailto:tiwarivinayak10@gmail.com',
+        CONTACT: 'mailto:tiwarivinayak10@gmail.com',
+        LINKEDIN: 'https://www.linkedin.com/in/vinayak-tiwari-7b53a0252/',
+        GOOGLE: 'https://www.cloudskillsboost.google/public_profiles/0409b11a-901d-49b0-8fb0-ebf7733d80ec',
     };
-    
-    
 
     const handleNavClick = (section) => {
-        console.log(`Navigating to ${section}`); //  The console.log is added here
+        console.log(`Navigating to ${section}`); // Debugging navigation
         const route = routes[section];
         if (route) {
-            router.push(route); 
+            window.open(route, '_blank'); // Open external links in a new tab
         } else {
             console.warn(`No route defined for section: ${section}`);
         }
@@ -71,7 +73,7 @@ export default function Index() {
                     {Object.keys(routes).map((section) => (
                         <Magnetic key={section}>
                             <div className={styles.el} onClick={() => handleNavClick(section)}>
-                                <a>{section}</a> 
+                                <a>{section}</a>
                                 <div className={styles.indicator}></div>
                             </div>
                         </Magnetic>
