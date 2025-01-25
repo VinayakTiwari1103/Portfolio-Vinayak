@@ -11,12 +11,12 @@ const projects = [
   {
     title: "Notes App",
     src: "notes_app.png",
-    color: "#4CAF50",
+    color: "#000000",
   },
   {
     title: "CHMOD Calculator",
     src: "calu.png",
-    color: "#4CAF50",
+    color: "#000000",
   },
   {
     title: "CC Analysis",
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: "DevOps Community Blog Page",
-    src: "devops_blog.png",
+    src: "image1103.png",
     color: "#FFD700",
   },
 ];
